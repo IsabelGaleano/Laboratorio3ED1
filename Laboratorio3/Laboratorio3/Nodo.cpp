@@ -1,5 +1,5 @@
 #include "Nodo.h"
-
+#include <iostream>
 Nodo::Nodo() {
 
 }

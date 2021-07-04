@@ -9,6 +9,10 @@ Cola::Cola() {
 	longitud = 0;
 }
 
+Nodo* Cola::getFrente() {
+	return frente;
+}
+
 bool Cola::esVacia() {
 	if (frente == nullptr and final == nullptr)
 	{

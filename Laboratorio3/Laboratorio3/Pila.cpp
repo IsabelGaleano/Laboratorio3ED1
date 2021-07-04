@@ -8,6 +8,10 @@ Pila::Pila() {
 	longitud = 0;
 }
 
+Nodo* Pila::getTope() {
+	return tope;
+}
+
 bool Pila::esVacia() {
 	if (tope == nullptr)
 	{
