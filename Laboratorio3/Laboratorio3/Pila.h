@@ -2,6 +2,7 @@
 #ifndef PILA_H
 #define PILA_H
 #include "Nodo.h"
+#include <iostream>
 #include <string>
 class Pila
 {

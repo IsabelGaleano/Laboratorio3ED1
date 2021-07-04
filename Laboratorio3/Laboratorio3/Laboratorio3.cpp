@@ -1,10 +1,10 @@
 // Laboratorio3.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-
-#include <string>
 #include "Cola.h"
 #include "Pila.h"
+#include "Nodo.h"
+#include "Gestor.h"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -18,8 +18,8 @@ void imprimirMenu() {
     cout << "\n 4: Agregar elemento a la cola \n";
     cout << "\n 5: Eliminar cola \n";
     cout << "\n 6: Mostrar cola\n";
-    /*cout << "\n 7: Eliminar Lista \n";
-    cout << "\n 8: Eliminar elemento \n";*/
+    cout << "\n 7: Pasar de pila a cola \n";
+    cout << "\n 8: Pasar de cola a pila \n";
     cout << "\n 9: Salir del programa \n";
 
 }
@@ -36,6 +36,7 @@ bool ejecutarOpcion(int opcion, Pila* pila, Cola* cola) {
     bool salir = false;
     int numero;
     string info;
+    Gestor* gestor = new Gestor();
     switch (opcion) {
     case 1:
         cout << "***Agregar elemento a la pila***\n";
@@ -74,6 +75,15 @@ bool ejecutarOpcion(int opcion, Pila* pila, Cola* cola) {
         cout << "***Mostrar Cola***\n";
         cola->mostrarCola();
         break;
+
+    case 7:
+        cout << "***Pasar de pila a cola***\n";
+        gestor->pilaACola(pila, cola);
+        break;
+    case 8:
+        cout << "***Pasar de cola a pila***\n";
+        gestor->colaAPila(pila, cola);
+        break;
     case 9:
         salir = true;
 
@@ -84,6 +94,8 @@ bool ejecutarOpcion(int opcion, Pila* pila, Cola* cola) {
 
     return salir;
 }
+
+
 
 
 int main()
@@ -102,6 +114,10 @@ int main()
 
     return 0;
 }
+
+
+
+
 
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

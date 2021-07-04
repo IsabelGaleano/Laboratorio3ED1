@@ -1,4 +1,2 @@
-﻿  Cola.cpp
-C:\EstructuraDatos1\Laboratorios\Laboratorio3ED1\Laboratorio3\Laboratorio3\Cola.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\EstructuraDatos1\Laboratorios\Laboratorio3ED1\Laboratorio3\Laboratorio3\Cola.cpp(50): warning C4715: 'Cola::eliminar': not all control paths return a value
+﻿  Laboratorio3.cpp
   Laboratorio3.vcxproj -> C:\EstructuraDatos1\Laboratorios\Laboratorio3ED1\Laboratorio3\Debug\Laboratorio3.exe
